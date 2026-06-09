@@ -1,4 +1,4 @@
-# Agentic-AI-OS-Automation
+# ScrubKernel: Agentic-AI-OS-Automation
 
 An enterprise-style autonomous agent system designed for secure OS-level task automation inside a governed local workspace.
 
