@@ -1,0 +1,14 @@
+2026-05-28 10:14:22,812 ERROR payments-worker-2 request_id=hex-72941
+Traceback (most recent call last):
+  File "/srv/payments/repository.py", line 88, in open_connection
+    pool.acquire(timeout=3.0)
+TimeoutError: DB connection timeout after 3000ms
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/payments/app.py", line 144, in process_invoice
+    db = open_connection("primary-ledger")
+  File "/srv/payments/repository.py", line 92, in open_connection
+    raise RuntimeError("Unable to connect to primary-ledger database")
+RuntimeError: Unable to connect to primary-ledger database

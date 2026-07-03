@@ -1,0 +1,21 @@
+{
+  "project": "banking_application",
+  "owner": "clean_example",
+  "prompt": "Create banking application",
+  "path": "C:\\Users\\siddh\\OneDrive\\Documents\\Agentic AI OS Automation\\generated_projects\\banking_application",
+  "workspace_path": "generated_projects/banking_application",
+  "command_cwd": "banking_application",
+  "files": [
+    "app.py",
+    "src/__init__.py",
+    "src/banking_store.py",
+    "data/.gitkeep",
+    "docs/ARCHITECTURE.md",
+    "requirements.txt",
+    ".gitignore",
+    "README.md",
+    ".vscode/tasks.json"
+  ],
+  "setup_command": "python -m pip install -r requirements.txt",
+  "run_command": "streamlit run app.py"
+}

@@ -1,0 +1,20 @@
+{
+  "project": "website_for_selling_shoes",
+  "owner": "local_user",
+  "prompt": "Create a website for selling shoes online",
+  "path": "C:\\Users\\siddh\\OneDrive\\Documents\\Agentic AI OS Automation\\generated_projects\\website_for_selling_shoes",
+  "workspace_path": "generated_projects/website_for_selling_shoes",
+  "command_cwd": "website_for_selling_shoes",
+  "files": [
+    "app.py",
+    "src/__init__.py",
+    "src/app_logic.py",
+    "docs/ARCHITECTURE.md",
+    "requirements.txt",
+    ".gitignore",
+    "README.md",
+    ".vscode/tasks.json"
+  ],
+  "setup_command": "python -m pip install -r requirements.txt",
+  "run_command": "streamlit run app.py"
+}
