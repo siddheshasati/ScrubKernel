@@ -12,15 +12,7 @@ A small agentic AI OS automation project providing sample components and demo wo
 - FastAPI for demo microservices
 - Simple file-based project templates for examples
 
-**Workflow & Run**
-1. Create a Python environment (recommended): `python -m venv .venv` (this repo ignores `.venv`).
-2. Install runtime deps: `python -m pip install -r requirements.txt` or for demo only: `python -m pip install fastapi uvicorn`
-3. Run demo API: `python -m uvicorn demo_workspace.app:app --port 8001`
-4. Visit `http://127.0.0.1:8001/health` to verify service is up.
-
-**Included screenshot**
-![demo health check](docs/screenshot.png)
-
+**Workflow**
 **Current status & Future work**
 - In progress: centralizing agent manifests, improving auth flows, adding runtime orchestration dashboard.
 - Planned features: automated test harnesses, CI/CD templates, containerization (Docker + k8s manifests).
