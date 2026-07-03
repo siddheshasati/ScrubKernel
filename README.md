@@ -1,3 +1,32 @@
+# ScrubKernel
+
+A small agentic AI OS automation project providing sample components and demo workspaces.
+
+**Architecture**
+- Core app modules live in the `app/` package (agents, auth, UI, workspace helpers).
+- `demo_workspace/` contains a minimal FastAPI demo service used for quick verification.
+- `generated_projects/` contains example generated project templates.
+
+**Tech stack**
+- Python 3.11+
+- FastAPI for demo microservices
+- Simple file-based project templates for examples
+
+**Workflow & Run**
+1. Create a Python environment (recommended): `python -m venv .venv` (this repo ignores `.venv`).
+2. Install runtime deps: `python -m pip install -r requirements.txt` or for demo only: `python -m pip install fastapi uvicorn`
+3. Run demo API: `python -m uvicorn demo_workspace.app:app --port 8001`
+4. Visit `http://127.0.0.1:8001/health` to verify service is up.
+
+**Included screenshot**
+![demo health check](docs/screenshot.png)
+
+**Current status & Future work**
+- In progress: centralizing agent manifests, improving auth flows, adding runtime orchestration dashboard.
+- Planned features: automated test harnesses, CI/CD templates, containerization (Docker + k8s manifests).
+- Constraints: secrets must never be committed (this repo excludes `.venv` and caches), large binary artifacts should be stored externally.
+
+If you want, I can add a short CONTRIBUTING.md with developer setup steps and tests.
 # ScrubKernel: Agentic-AI-OS-Automation
 
 An enterprise-style autonomous agent system designed for secure OS-level task automation inside a governed local workspace.
